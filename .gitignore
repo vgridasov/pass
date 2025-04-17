@@ -1,0 +1,73 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
+.egg-info/
+dist/
+build/
+develop-eggs/
+lib/*
+lib64/*
+parts/*
+eggs/*
+bin/
+var/*
+.svn/
+*.log
+local_settings.py
+db.sqlite3*
+media/* # исключить загружаемые медиа-файлы от отслеживания
+migrations/*.py # исключаем миграции отдельно, так как чаще всего генерируются автоматически
+
+# Конфигурационные файлы системы
+.env
+secrets.json
+.env.example
+
+# Исключения специфичные для VSCode
+.vscode/*
+!.vscode/settings.json # Если хотите сохранить настройки среды разработки
+
+# Исключение личных настроек IDE (PyCharm, IntelliJ)
+.idea/
+.project
+.workspace
+
+# Лог-файлы
+logs/*
+
+# Файлы документации
+docs/build/
+
+# Для пакетов pipenv / virtualenv
+Pipfile.lock
+pip-selfcheck.json
+venv/
+
+# Скрытые временные файлы Windows
+*~
+
+# Тестовые артефакты
+coverage.xml
+htmlcov/
+.nox/
+.coverage.*
+.cache/
+.noseids
+hypothesis/
+pytest_cache/
+.unittest-discovery-cache/
+.tox/
+.coveragerc
+
+# Дополнительные модули и зависимости
+site-packages/
+
+# Исходники автоматических тестов
+tests/output/
+
+# Архивы сборки
+*.zip
+*.tar.gz
